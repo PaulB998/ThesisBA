@@ -1,0 +1,82 @@
+% \PassOptionsToPackage{Table,dvipsnames,svgnames}{xcolor}
+\documentclass[
+	draft=false, % Set to 'false' before final printing
+	a4paper,
+	fontsize=12pt,
+	version=last,
+	BCOR=10mm,
+	DIV=12,
+	toc=bibliography,
+	toc=listof,
+	toc=index,
+	hyperref,
+	amsmath,
+	ngerman,
+	twoside,
+	% print, % CHANGE FOR PRINT -> Disables empty pages between chapters
+	hyphens,
+	headinclude=true,
+	footnotes=multiple
+ ]{scrbook}
+
+\input{configuration}
+
+\newcommand{\worktitle}{Thesis Title}
+\newcommand{\typeofthesis}{Bachelorarbeit}
+\newcommand{\nameofauthor}{Noah Stock}
+\newcommand{\placeofexam}{Karlsruhe}
+\newcommand{\dateofexam}{30.09.2024}
+\newcommand{\reviewer}{Erstbetreuer Hochschule}
+\newcommand{\advisorA}{Zweitbetreuer Hochschule}
+\newcommand{\advisorB}{Betreuer Firma}
+
+\input{configuration_final}
+
+\raggedbottom 
+
+\begin{document}
+
+% \includepdf[pages={1}, offset=9mm 0mm]{documents/randomShit/Deckblatt.pdf}
+% \includepdf{documents/randomShit/Deckblatt.pdf}
+
+\frontmatter
+
+\input{documents/randomShit/declaration-hka}
+
+% \input{documents/randomShit/gender-disclaimer}
+
+% \input{documents/content/00_Abstract}
+
+\input{documents/randomShit/toc}
+
+\input{documents/randomShit/abbriviations}
+
+\mainmatter
+
+% Einleitung
+\input{documents/content/01_Einleitung}
+
+% Grundlagen 
+\input{documents/content/02_Grundlagen}
+
+% Konzeption
+\input{documents/content/03_IdentifikationDerAnwendungsfälle.tex}
+
+% Implementierung
+\input{documents/content/04_SpezifikationDerToolAnforderung.tex}
+
+% Evaluation
+\input{documents/content/05_IntegrationVOnUnternehmensinternerDatenInCopilot.tex}
+
+% Fazit
+\input{documents/content/06_DetailausarbeitungEinesAusgewähltenAnwendungsfall.tex}
+
+\input{documents/content/07_Diskussion.tex}
+
+\input{documents/content/08_FazitUndAusblick.tex}
+
+\backmatter
+
+\input{documents/randomShit/backmatter}
+
+\end{document}

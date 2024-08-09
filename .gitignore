@@ -1,0 +1,40 @@
+# LaTeX specific
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bcf
+*.lof
+*.xml
+*.thm
+*.lol
+*.lot
+*.synctex(busy)
+
+Grundlagen.tex
+GHauptteil.tex
+# Build directories
+_build/
+tmp/
+dist/
+
+# Editor/IDE specific
+.vscode/
+.idea/
+
+# Compiled output
+
+archiv/*
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+
+# draw.io
+*.bkp
