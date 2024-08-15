@@ -2,8 +2,109 @@
 
 \section{Motivation}
 
+Der Bedarf an automatisierten Lösungen zur Unterstützung der täglichen Arbeitsabläufe wächst 
+kontinuierlich \footcite{demary_kunstliche_2019} \footcite{feike_kunstliche_2024}. In vielen Unternehmensbereichen kann der Einsatz von \ac{KI} zur Prozessoptimierung erheblich zur Effizienzsteigerung und Fehlerreduktion beitragen. Solche Lösungen sind besonders 
+wertvoll in komplexen Arbeitsumgebungen, wo herkömmliche manuelle Methoden zunehmend an ihre 
+Grenzen stoßen \footcite{lenzen_kunstliche_2023}.
+Das Setting bei ObjektKultur ist geprägt von einer Vielzahl an Dokumenten und Modulen innerhalb der 
+Plattform. Diese Module decken verschiedene Bereiche wie Projektmanagement, Ressourcenplanung 
+und Dokumentenverwaltung ab. Angesichts der großen Menge an Daten und der Vielzahl von Aufgaben 
+kann die Suche nach relevanten Informationen zeitaufwendig sein. Ein \ac{KI}-gestützter Chatbot könnte 
+hier erhebliche Vorteile bieten, indem er den Zugriff auf Informationen beschleunigt und die Benutzer 
+in Echtzeit unterstützt. Dies würde die Effizienz der Arbeitsabläufe deutlich erhöhen und die Mitarbeiter 
+entlasten.
+Die OKPlattform dient als zentrale Anlaufstelle für die Verwaltung von Projekten, Ressourcen und 
+Dokumenten in einem Unternehmen. Die Anforderungen an Effizienz und Qualität bei der Verwaltung 
+dieser Prozesse sind kontinuierlich gestiegen. Dies hat zur Folge, dass herkömmliche manuelle 
+Methoden zur Bewältigung von Aufgaben zunehmend an ihre Grenzen stoßen.
+In diesem Kontext stellen die Fragen zur Kapazitätsplanung, Rechnungsstellung und Auftragsverwaltung 
+zentrale Herausforderungen dar. Die steigende Anzahl an Aufgaben und die Notwendigkeit schneller 
+und präziser Antworten auf Budgetierungsfragen sowie Einschätzungen zur Mitarbeiterkapazität 
+(beispielsweise im laufenden Sprint) erfordern effiziente Hilfsmittel. Fragen wie „Wie lange reicht unser 
+Budget noch unter den aktuellen Voraussetzungen?“ oder „Wie viel Kapazität haben wir für den 
+nächsten Sprint?“ können mit den derzeitigen Methoden nur ineffizient beantwortet werden.
+Ein \ac{KI}-Assistent könnte hierbei helfen, indem er aktuelle Daten analysiert und Prognosen erstellt, die 
+den Mitarbeitern als Entscheidungsgrundlage dienen. Durch die Automatisierung dieser 
+Routineaufgaben und die Beschleunigung von Informationsabrufen könnte die Effizienz der 
+Arbeitsprozesse in der OKPlattform erheblich gesteigert werden. Der KI-Assistent soll schnell auf 
+Anfragen reagieren, indem er relevante Daten auswertet und die notwendigen Informationen 
+bereitstellt. Dies würde die Mitarbeiter entlasten und es ihnen ermöglichen, sich auf komplexere und 
+strategisch wichtigere Aufgaben zu konzentrieren.
+Als Teil der genannten Prozessschritte spielt die Dokumentenauswertung eine besondere Rolle. Die 
+Dokumente, die in der Projektverwaltung der OKPlattform (\ac{PQC}) gespeichert sind, enthalten 
+wesentliche Informationen zu laufenden und vergangenen Projekten. Zudem sind 
+Vertragsbedingungen, NDAs und AGBs im Dateibereich des MS Teams zu den jeweiligen Projekten 
+hinterlegt. Die manuelle Durchsicht und Auswertung dieser Dokumente ist zeitaufwendig und 
+fehleranfällig. Durch die Automatisierung dieser Routineaufgaben und die Beschleunigung von 
+Informationsabrufen könnte die Effizienz der Arbeitsprozesse in der OKPlattform erheblich gesteigert 
+werden. Der \ac{KI}-Assistent soll schnell auf Anfragen reagieren, indem er relevante Daten auswertet und 
+die notwendigen Informationen bereitstellt. Dies würde die Mitarbeiter entlasten und es ihnen 
+ermöglichen, sich auf komplexere und strategisch wichtigere Aufgaben zu konzentrieren.
+Die Prüfung der Hypothesen zum Einsatz von KI-Tools in den genannten Prozessen ist daher Gegenstand 
+dieser Thesis. Es muss untersucht werden, inwiefern eine KI diese entsprechenden Anforderungen 
+tatsächlich erfüllen kann.
+
 \section{Zielsetzung}
+
+Das Hauptziel dieser Arbeit ist die Entwicklung eines prototypischen, \ac{KI}-gestützten Assistenzsystems zur 
+Optimierung der Arbeitsprozesse bei einem mittelständischen Softwarehersteller. Durch die 
+Automatisierung von Routineaufgaben sowie die Beschleunigung von Informationsabrufen soll die 
+Effizienz der Arbeitsabläufe gesteigert werden.
+Ein zentrales Ziel ist die Verbesserung der Effizienz und Qualität der Arbeitsprozesse. Das System soll in 
+der Lage sein, relevante Informationen aus verschiedenen Dokumenten zu extrahieren und den Nutzern 
+zur Verfügung zu stellen, sowie Fragen zur Kapazitätsplanung, Rechnungsstellung und Projektdaten zu 
+beantworten. Es soll den Nutzern helfen, ihre Ressourcen effizient zu planen und den Zugriff auf 
+historische Projektdaten zu erleichtern. Somit soll das KI-gestützte Assistenzsystem zu einem noch 
+effizienteren und nutzerfreundlicheren Werkzeug für die Projekt- und Ressourcenverwaltung werden.
+Zunächst werden die Anforderungen und Rahmenbedingungen für das zu entwickelnde System 
+spezifiziert. Dies beinhaltet die Definition der spezifischen Anforderungen, die das System erfüllen muss, 
+um den Nutzern bei der Planung ihrer Ressourcen und dem Zugriff auf historische Projektdaten zu 
+helfen.
+Anschließend erfolgt die Konzeption des Prototyps. In diesem Schritt werden verschiedene Lösungen, 
+Architekturen und Implementierungsmöglichkeiten untersucht. Darüber hinaus wird geprüft, wie das 
+System in die bestehende Infrastruktur der OKPlattform integriert werden kann.
+Daraufhin wird der Prototyp umgesetzt. Das resultierende System soll die Nutzer der OKPlattform in 
+ihren täglichen Arbeitsaufgaben unterstützen, indem es Routineaufgaben vereinfacht und schnelle, 
+präzise Antworten auf diverse Fragen liefert.
+Abschließend wird der Prototyp evaluiert. Diese Evaluation umfasst die Messung der Vorteile des 
+Systems und soll sicherstellen, dass das \ac{KI}-gestützte Assistenzsystem zu einem noch effizienteren und 
+nutzerfreundlicheren Werkzeug für die Projekt- und Ressourcenverwaltung wird.
+Die Prüfung der Hypothesen zum Einsatz von \ac{KI}-Tools in den genannten Prozessen ist daher Gegenstand 
+dieser Thesis. Es muss untersucht werden, inwiefern eine \ac{KI} diese entsprechenden Anforderungen 
+tatsächlich erfüllen kann, ohne an Grenzen zu stoßen.
 
 \section{Vorgehen}
 
+Die Grundlagen dieser Thesis basieren auf einer umfassenden theoretischen Recherche. Hierbei werden 
+relevante Fachbücher, Fachzeitschriften und wissenschaftliche Artikel herangezogen. Ergänzend 
+werden Internet-quellen verwendet, um den aktuellen Stand der Technik und die neuesten 
+Entwicklungen im Bereich der \ac{KI}-gestützten Assistenzsysteme und \ac{KI}-Tools zu erfassen. Dies dient der 
+Lösungskonzeption und der Berücksichtigung des State of the Art bei der Entwicklung des 
+Prototyps.
+Ein wichtiger Bestandteil des Vorgehens ist die Analyse bestehender Lösungen und Architekturen für 
+ähnliche Systeme. Dies umfasst die Evaluierung von Technologien wie Azure OpenAI und anderen 
+relevanten Tools zur Entwicklung eines solchen Assistenzsystems. Durch eine detaillierte Untersuchung 
+dieser Technologien sollen die bestmöglichen Ansätze für die Implementierung in der OKPlattform 
+identifiziert werden. Diese Phase umfasst die Konzeption und Implementierung unter Berücksichtigung 
+von Best Practices.
+Zur Ergänzung der theoretischen Grundlagen wird eine qualitativ empirische Erhebung durchgeführt. 
+Hierbei werden Interviews mit Mitarbeitern der OKPlattform geführt. Diese Interviews dienen dazu, 
+spezifische Anforderungen und Herausforderungen aus der Praxis zu identifizieren und die 
+theoretischen Erkenntnisse zu validieren. Die Ergebnisse dieser Interviews fließen in die Konzeption des 
+Systems ein.
+Des Weiteren wird ein prototypischer Ansatz verfolgt. Anhand der gewonnenen Erkenntnisse wird ein 
+Prototyp des \ac{KI}-gestützten Assistenzsystems entwickelt und implementiert. Hierbei wird ein agiles 
+Vorgehen gewählt, das einen kontinuierlichen Austausch mit den „Kunden“ sowie eine kontinuierliche 
+Evaluation beinhaltet. Durch diesen praktischen Ansatz sollen die Funktionalitäten und der Mehrwert 
+des Systems überprüft und gegebenenfalls optimiert werden.
+Abschließend erfolgt die Evaluation des Prototyps. Die Evaluation umfasst die Messung der Vorteile des 
+Systems, um sicherzustellen, dass das \ac{KI}-gestützte Assistenzsystem zu einem noch effizienteren und 
+nutzerfreundlicheren Werkzeug für die Projekt- und Ressourcenverwaltung wird.
+
 \section{Abgrenzung}
+
+Die vorliegende Arbeit verfolgt das Ziel, ein prototypisches KI-gestütztes Assistenzsystem zur Optimierung von Prozessen in der OKPlattform zu entwickeln. Die angestrebte Optimierung zielt auf eine Steigerung der Effizienz und Genauigkeit, insbesondere durch die Automatisierung von Routineaufgaben wie der Dokumentenauswertung, der \ac{PQC}, der Kapazitätsplanung sowie der Rechnungsstellung. Der Schwerpunkt liegt dabei auf der Analyse und Beantwortung von Fragen sowie der Bewertung von Dokumenten.
+
+Die vorliegende Arbeit dient als Machbarkeitsstudie sowie als Referenz für die Integration von KI in bestehende Unternehmensprozesse. Der Fokus liegt nicht auf der Entwicklung eines umfassenden Systems für alle denkbaren Anwendungsfälle, sondern auf der Umsetzung und Evaluierung grundlegender Konzepte innerhalb spezifischer, praxisnaher Anwendungsfälle. Die gewonnenen Erkenntnisse bilden die Grundlage für zukünftige Erweiterungen und spezifische Anpassungen in größeren Projekten.
+
+Das Ziel besteht nicht in einer vollständigen Automatisierung aller Prozesse der OKPlattform, sondern in der exemplarischen Erarbeitung grundlegender Ansätze zur Optimierung, die auf verschiedene Bereiche übertragen werden können.

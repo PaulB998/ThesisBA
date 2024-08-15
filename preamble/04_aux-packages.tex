@@ -30,12 +30,13 @@
 \usepackage{minted}
 
 \usepackage[backend=biber,
-  style=authoryear,   % Autor-Jahr-Stil verwenden
+  style=authoryear,   % Verwende den Autor-Jahr-Stil
+  citestyle=authoryear, % Stelle sicher, dass der Zitationsstil auch Autor-Jahr ist
   sorting=nyt,
   sortlocale=de,
   pagetracker=page,
 ]{biblatex}
-\addbibresource{documents/bibliography/references.bib}  % Pfad zur .bib-Datei
+\addbibresource{documents/bibliography/references.bib}
 
 \input{glyphtounicode}
 \pdfgentounicode=1
