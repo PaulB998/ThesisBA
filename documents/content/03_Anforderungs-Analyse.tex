@@ -2,8 +2,63 @@
 
 \section{IST-Zustand}
 
+\subsection{PQC}
+
+Das Project Quality Controlling (PQC) stellt ein zentrales Modul in der OKPlattform dar. Es wird hauptsächlich von Projektleitern verwendet, um die Qualität und den Fortschritt von Projekten zu überwachen. Aktuell umfasst das PQC verschiedene Funktionen wie das Führen von Scope-Protokollen, die Qualitätsbewertung.
+
+\subsection{Rechnungsstellung}
+
+Die Rechnungsstellung innerhalb der OKPlattform umfasst alle Prozesse zur Erstellung von Rechnungen. Derzeit erfolgt die Rechnungsstellung durch Eingabe von Daten und Überprüfung der tatsächlichen PT mit den Soll-PT
+
+\subsection{Auftragsverwaltung/Kapazitätsplannung}
+
+Die Auftragsverwaltung und Kapazitätsplanung in der OKPlattform ist für die Organisation und Zuteilung von Ressourcen innerhalb von Projekten verantwortlich. Derzeit erfolgt die Kapazitätsplanung weitgehend manuell. Urlaube werden dort auch eingetragen.
+
+\subsection{Dokumentenauswertung}
+
+Die Dokumentenauswertung umfasst das Analysieren und Verarbeiten von Dokumenten, die in verschiedenen Plattformen wie SharePoint, OneDrive und Teams gespeichert sind. Diese Dokumente enthalten oft wichtige Informationen zu Projekten, Verträgen und weiteren relevanten Inhalten, die manuell durchsucht werden müssen.
+
+\subsubsection{Sharepoint}
+
+SharePoint dient als zentrale Plattform für die Ablage und Verwaltung von Dokumenten innerhalb der OKPlattform. Es ermöglicht die Speicherung, Organisation und gemeinsame Nutzung von Dokumenten. Eine Herausforderung besteht jedoch darin, spezifische Informationen schnell zu finden, insbesondere in großen Dokumentenbeständen.
+
+\subsubsection{OneDrive}
+
+OneDrive wird in der OKPlattform hauptsächlich für die persönliche Speicherung und den Austausch von Dateien genutzt. Die Herausforderung liegt hier oft in der Vielzahl von Dokumenten, die schwer zu durchforsten sind. 
+
+\subsubsection{Teams}
+
+Teams ist eine Plattform für Kommunikation und Zusammenarbeit, in der auch Dokumente geteilt und diskutiert werden. Diese Dokumente können leicht übersehen oder schwer zugänglich sein, wenn sie nicht richtig organisiert sind.
+
+\subsection{Reporting(PowerBI)}
+
+//TODO
+Zu klären: realisierbar?
+
 \section{Soll-Analyse}
 
 \subsection{Experteninterviews}
 
-Es werden Experteninterviews geführt zur ... \footcite{wernitz_experteninterview_2018}
+Im Rahmen dieser Arbeit wurden Experteninterviews durchgeführt, um die Anforderungen für ein KI-Tool zu erheben. Diese qualitative Forschungsmethode ermöglichte es, tiefgehende Einblicke in die Prozesse und Vorgehensweisen der Nutzer der OKPlattform zu gewinnen. Dazu wurden die Erfahrungen der aktiven Nutzer gezielt abgefragt.\footcite[4]{wernitz_experteninterview_2018}
+
+\subsubsection{Zielsetzung}
+
+Die Zielsetzung der durchgeführten Interviews bestand in der Ermittlung der Anforderungen an ein KI-Assistenztool, welches die Beschaffung von Informationen erleichtern soll. Dabei wurden sowohl häufige als auch unklare Informationsbeschaffungswege berücksichtigt. Die Befragungen dienten der Erfassung bestehender Nutzungsmuster, potenzieller Herausforderungen sowie Vorschläge und Erwartungen der Nutzerinnen und Nutzer. Diese Anforderungen bilden die Grundlage für die Umsetzung des Prototyps.
+
+\subsubsection{Auswahl der Experten}
+
+Die Auswahl der Experten erfolgte zunächst anhand der Nutzungsfrequenz der OKPlattform. Hierbei wurden insbesondere Personen berücksichtigt, die regelmäßig mit den Modulen \ac{PQC}, Rechnungsstellung und Kapazitätsplanung arbeiten. Die Auswahl basiert auf praktischer Erfahrung, um sicherzustellen, dass die Anforderungen praxisrelevant und umsetzbar sind. \footcite[5]{wernitz_experteninterview_2018}
+
+\subsubsection{Methodik und Durchführung}
+
+Die durchgeführten Interviews waren halbstrukturiert, um einerseits zielgerichtete Fragen zu stellen und andererseits einen offenen Dialog zuzulassen, in dessen Verlauf alle relevanten Informationen extrahiert werden können.
+
+Die Schwerpunkte der Interviews lassen sich wie folgt zusammenfassen:
+
+\begin{itemize}
+    \item Tägliche Nutzung der OKPlattform und der genutzten Module
+    \item Identifikation von Schwachstellen und Herausforderungen
+    \item Anforderungen an ein System, das die Informationsbeschaffung durch KI unterstützt
+\end{itemize}
+
+\subsection{Use-Cases}
